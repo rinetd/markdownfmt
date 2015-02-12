@@ -330,7 +330,7 @@ func needsEscaping(text []byte, lastNormalText string) bool {
 		"_",
 		"{", "}",
 		"[", "]",
-		"(", ")",
+		//"(", ")",
 		"#",
 		"+",
 		"-":
