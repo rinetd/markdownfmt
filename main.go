@@ -62,6 +62,7 @@ func processFile(filename string, in io.Reader, out io.Writer, stdin bool) error
 	if err != nil {
 		return err
 	}
+	res = []byte(strings.TrimSpace(string(res)) + "\n")
 
 	if !bytes.Equal(src, res) {
 		// formatting has changed
